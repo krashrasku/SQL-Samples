@@ -1,6 +1,9 @@
+
 /*********
 MEASURE_VALUE_COMPLETENESS
 Computing number of null values and the proportion to total records per field
+
+2/28/20 FIXED to actually COUNT NULL values.
 
 Parameters used in this template:
 cdmDatabaseSchema = cdm_synthea_v897.dbo
@@ -14,7 +17,7 @@ SELECT num_violated_rows,
 	     END  AS pct_violated_rows
 FROM
 (
-	SELECT violated_rows.violating_field AS num_violated_rows
+	SELECT COUNT(violated_rows.violating_field) AS num_violated_rows
 	FROM
 	(
 		SELECT V.provider_id AS violating_field, 
