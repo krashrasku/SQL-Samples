@@ -3,6 +3,8 @@ FIELD_CDM_DATATYPE
 
 At a minimum, for each field that is supposed to be an integer, verify it is an integer
 
+--> Looks for all the Provider IDs that are zero (Provider IDs are not supposed to be zero) <--
+
 Parameters used in this template:
 cdmDatabaseSchema = cdm_synthea_v897.dbo
 cdmTableName = PERSON
