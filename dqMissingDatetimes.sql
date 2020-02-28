@@ -1,7 +1,8 @@
   
 /*********
 PLAUSIBLE_TEMPORAL_AFTER
-get number of records and the proportion to total number of eligible records with datetimes that do not occur on or after their corresponding datetimes
+get number of records and the proportion to total number of eligible records with datetimes 
+that do not occur on or after their corresponding datetimes
 
 Parameters used in this template:
 cdmDatabaseSchema = cdm_synthea_v897.dbo
